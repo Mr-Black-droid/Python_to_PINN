@@ -29,7 +29,7 @@ def print_row(width):
     print("?" * width)
 
 main()
-'''
+
 
 def main():
     print_square(3)
@@ -39,13 +39,18 @@ def print_square(size):
 
     #For each row in square
     for i in range(size):
-
-        #For each brick in row
         for j in range(size):
-
-            #Print a brick
             print("#", end="")
-
         print()
+main()
+'''
+
+#Let's further optimize
+def main():
+    print_square(3)
+
+def print_square(size):
+    for i in range(size):
+        print("#" * size)
 
 main()
